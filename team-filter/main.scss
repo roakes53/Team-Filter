@@ -1,0 +1,102 @@
+body {
+    font-family: "Advent Pro", sans-serif;
+  }
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: #0A8458;
+$color__link-visited: #0A8458;
+$color__link-hover: midnightblue;
+$color__text-main: #404040;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+$primary__light: #0A8458;
+$primary__dark: #103E2D;
+$accent__btn: #F9942F;
+$secondary_light: #13315C;
+$secondary_dark: #2B2D42;
+$white: #fff;
+
+#filter-container .row{
+    justify-content: flex-start;
+}
+.team-member {
+    height: 350px;
+    width: 31%;
+    color: $white;
+    background: no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+    margin: 0 1% 2rem;
+    border-radius: 1.5rem 0 1.5rem 0;
+    
+    &:hover .team-info{
+        left: 0;
+    }
+    
+    &.deactive {
+        display: none;
+    }
+    a .team-info {
+        color:  $white;
+     }
+
+    .team-info {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background: rgba($primary__light, .7);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s linear;
+        flex-direction: column;
+        p {
+            margin-bottom: 0;
+            
+        }
+        .name {
+            font-family: "Advent Pro", sans-serif;
+            font-size: 1.8rem;
+            padding: 0 .5rem;
+            text-align: center;
+            
+        }
+    }
+}
+
+.category-filter, .category-list {
+    margin-left: 0;
+    padding-left: 0;
+    li {
+        background: $primary__dark;
+        transition: all .3s linear;
+        margin-bottom: .8rem;
+        display: inline-block;
+        color: $white;
+        padding: .5rem 1rem;
+        margin-right: .5rem;
+        &:hover {
+            background: $primary__light;
+        }
+        &.active {
+            background: $secondary_light;
+        }
+           
+        
+    }
+}

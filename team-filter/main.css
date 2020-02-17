@@ -1,0 +1,71 @@
+body {
+  font-family: "Advent Pro", sans-serif;
+}
+
+#filter-container .row {
+  justify-content: flex-start;
+}
+
+.team-member {
+  height: 350px;
+  width: 31%;
+  color: #fff;
+  background: no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+  margin: 0 1% 2rem;
+  border-radius: 1.5rem 0 1.5rem 0;
+}
+.team-member:hover .team-info {
+  left: 0;
+}
+.team-member.deactive {
+  display: none;
+}
+.team-member a .team-info {
+  color: #fff;
+}
+.team-member .team-info {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: rgba(10, 132, 88, 0.7);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+  flex-direction: column;
+}
+.team-member .team-info p {
+  margin-bottom: 0;
+}
+.team-member .team-info .name {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 1.8rem;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+.category-filter, .category-list {
+  margin-left: 0;
+  padding-left: 0;
+}
+.category-filter li, .category-list li {
+  background: #103E2D;
+  transition: all 0.3s linear;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+}
+.category-filter li:hover, .category-list li:hover {
+  background: #0A8458;
+}
+.category-filter li.active, .category-list li.active {
+  background: #13315C;
+}
+
+/*# sourceMappingURL=main.css.map */
